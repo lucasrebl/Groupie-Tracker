@@ -1,0 +1,90 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.logo{
+    margin-top: 5vh;
+}
+
+.header-basic {
+    background-color: transparent;
+    height: 13vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.titre {
+    color: white;
+}
+
+.recherche {
+    margin-right: 20vh;
+    margin-top: 5vh;
+    position: relative;
+}
+
+.input {
+    border-radius: 20px 0px 0px 20px;
+    border: 1px solid rgb(0, 0, 0);
+    color: #d60000;
+    width: 120vh;
+    background-color: #ffffff;
+    height: 6,5vh;
+    font-family: Comic Sans MS, Comic Sans, cursive;
+    position: relative;
+}
+
+@media (max-width: 1100px) {
+    .input {
+        width: 100vh;
+    }
+
+}
+
+@media (max-width: 1100px) and (min-width: 600px) {
+    .input {
+        width: 60vh;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+    .input {
+        width: 25vh;
+    }
+
+}
+
+ul>button {
+    position: relative;
+    margin-left: auto;
+}
+
+.login {
+    position: relative;
+    display: flex;
+
+}
+
+.search {
+    color: aliceblue;
+    margin-top: 2vh;
+}
+
+.search-btn {
+    width: 30px;
+    height: 50px;
+    border-radius: 0 20px 20px 0;
+    border: 1px solid rgb(0, 0, 0);
+    background: rgb(255, 255, 255);
+    text-align: center;
+    color: #000000;
+    cursor: pointer;
+
+}

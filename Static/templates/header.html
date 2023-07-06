@@ -1,0 +1,21 @@
+{{define "header"}}
+<header>
+    <ul class="header-basic">
+        <div class="titre">
+            <img class="logo" src="../Static/image/Deeztrack_MainIcon (1).png">
+            <script src="https://kit.fontawesome.com/29634ca628.js" crossorigin="anonymous"></script>
+        </div>
+
+        <div class="recherche">
+            <form class="login" autocomplete="on" method="POST" action="/">
+                <input class="input" id="mySearch" name="query" type="text" placeholder="   Entrer un nom d'artiste">
+                <!-- <div class="search"> -->
+                <button class="search-btn" type="text">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </form>
+        </div>
+
+    </ul>
+</header>
+{{end}}

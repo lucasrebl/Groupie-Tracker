@@ -1,0 +1,68 @@
+.square {
+    display: block;
+    background: linear-gradient(132deg, rgb(251, 165, 116) 0.00%, rgb(216, 245, 251) 100.00%);
+    border: solid;
+    height: 650px;
+    width: 1400px;
+    font-family:Comic Sans MS, Comic Sans, cursive;
+}
+
+.item{
+    margin-top: 80vh;
+    display: flex;
+    margin-right: 47vh;
+    margin-left: -42vh;
+    background-color: transparent;
+    font-family:Comic Sans MS, Comic Sans, cursive;
+}
+
+.bloc{
+    display: flex;
+}
+
+.bloc2{
+    display: grid;
+    margin-top: 6vh;
+    margin-left: -10vh;
+}
+
+.Id{
+    display: flex;
+    color: transparent;
+}
+
+.imageartiste{
+    display: flex;
+    height: 70vh;
+    width: 70vh;
+    margin: 5vh;
+}
+
+.Artiste{
+    display: flex;
+}
+
+.Date-crea{
+    display: flex;
+}
+
+.Date-album{
+    display: flex;
+}
+
+.Membre{
+    display: flex;
+}
+
+
+#background-video {
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+}

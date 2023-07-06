@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<head>
+    <link rel="icon" type="image/png" sizes="16x16" href="../Static/image/icone.png">
+    <link rel="stylesheet" href="../Static/artiste.css" type="text/css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+</head>
+
+<body>
+
+    <!-- <video id="background-video" autoplay loop muted>
+        <source src="../Static/image/Free Universe Stars Video Gif Animated Zoom Virtual Background .mp4"
+            type="video/mp4">
+    </video> -->
+
+    {{ range . }}
+
+    <div class=" Id">
+        <p>{{.Id}}</p>
+        <a name="{{.Id}}"></a>
+    </div>
+
+    <div class="square">
+
+        <div class="bloc">
+
+            <div class="imageartiste">
+                <img src={{.Image}} id="cover">
+            </div>
+
+            <button class="item"><a href="/">Acceuil</a></button>
+
+            <div class="bloc2">
+
+                <div class="Artiste">
+                    <p>artiste : </p>
+                    <p>{{.Name}}</p>
+                </div>
+
+                <div class="Date-crea">
+                    <p>date de création : </p>
+                    <p>{{.CreationDate}}</p>
+                </div>
+
+                <div class="Date-album">
+                    <p>date du premiers album : </p>
+                    <p>{{.FirstAlbum}}</p>
+                </div>
+
+                <div class="Membre">
+                    <p>membres: </p>
+                    <p>{{range .Members}}
+                        {{.}}
+                        {{end}}
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+        
+    </div>
+    {{end}}
+
+</body>
+
+</html>

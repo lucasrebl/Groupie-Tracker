@@ -1,0 +1,36 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.footer-basic {
+    background-color:transparent;
+    height: 13vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+
+.titre2{
+    color: white;
+}
+
+.crédit{
+    color: white;
+    margin-top: 10vh;
+    margin-right: 80vh;
+}
+
+
+  @media (max-width: 390px) {
+    .lien2 a {
+        margin: auto;
+        margin-left:4vh;
+        font-family: gill Sans,sans-serif;
+        text-align: center;
+        color: white;
+        text-decoration: underline 3px #1DB954;
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<head>
+	<link rel="icon" type="image/png" sizes="16x16" href="../Static/image/icone.png">
+	<link rel="stylesheet" href="/Static/accueil.css" type="text/css">
+	<link rel="stylesheet" href="/Static/header.css" type="text/css">
+	<link rel="stylesheet" href="/Static/footer.css" type="text/css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>DeezTrack</title>
+</head>
+
+{{template "header"}}
+
+<body>
+
+	<video id="background-video" autoplay loop muted>
+		<source src="../Static/image/Free Universe Stars Video Gif Animated Zoom Virtual Background .mp4"
+			type="video/mp4">
+	</video>
+
+	<form id="filtersearch" method="GET">
+		<div class="fieldgroup">
+			<div class="groupcbox">
+				<input type="checkbox" name="cdate" id="cdate" class="cbox">
+				<label for="cdate">Date de création</label>
+			</div>
+
+			<div class="groupinput">
+				<input class="numinp" type="number" name="cdate[from]" min="1600" placeholder="from" id="">
+				<input class="numinp" type="number" name="cdate[to]" max="2021" placeholder="to" id="">
+			</div>
+		</div>
+
+		<div class="fieldgroup">
+			<div class="groupcbox">
+				<input type="checkbox" name="falbum" id="falbum" placeholder="to" class="cbox">
+				<label for="falbum">Date du premier album</label>
+			</div>
+
+			<div class="groupinput">
+				<input class="numinp" type="number" name="falbum[from]" min="1600" placeholder="from" id="">
+				<input class="numinp" type="number" name="falbum[to]" max="2021" placeholder="to" id="">
+			</div>
+		</div>
+
+		<div class="fieldgroup">
+			<div class="groupcbox">
+				<input type="checkbox" name="members" id="members" class="cbox">
+				<label for="members">Nombres de membres</label>
+			</div>
+			
+			<div class="groupinput">
+				<input class="numinp" type="number" name="members[from]" min="1" placeholder="from" id="">
+				<input class="numinp" type="number" name="members[to]" max="100" placeholder="to" id="">
+			</div>
+		</div>
+
+		<div class="fieldgroup">
+			<div class="locgroup">
+				<button id="filterbtn">Filter</button>
+			</div>
+		</div>
+	</form>
+
+	<div class="grille">
+		<div class="grille-item">
+			{{ range . }}
+			<a href="/artiste#{{.Id}}" id="btn"><img src={{.Image}} id="cover"> </a><a name="{{.Id}}"></a>
+			{{end}}
+		</div>
+	</div>
+
+</body>
+
+{{template "footer"}}
+
+</html>
